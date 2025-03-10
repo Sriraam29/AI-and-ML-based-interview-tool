@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0e7ff, #f5f7fa);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #9333ea;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .feature-card i {
+            font-size: 2rem;
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+        .feature-card h5 {
+            color: #2d3748;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #718096;
+            font-size: 1rem;
+        }
+        .learning-resources {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        .learning-resources h3 {
+            color: #9333ea;
+            margin-bottom: 20px;
+        }
+        .resource-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .resource-item:last-child {
+            border-bottom: none;
+        }
+        .resource-item i {
+            font-size: 1.5rem;
+            color: #9333ea;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .resource-item p {
+            color: #4a5568;
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Interview Prep Tool</h1>
+        <p class="subtitle">Discover tools to ace your interviews with ease. Let’s prepare together!</p>
+
+        <div class="card-grid">
+            <a href="http://127.0.0.1:5000/" class="feature-card">
+                <i class="bi bi-camera-video"></i>
+                <h5>Video Analysis</h5>
+                <p>Analyze your video interviews for insights and improvements.</p>
+            </a>
+            <a href="live-audio.html" class="feature-card">
+                <i class="bi bi-mic"></i>
+                <h5>Live Audio Analysis</h5>
+                <p>Practice speaking and get real-time feedback on your tone.</p>
+            </a>
+            <a href="http://127.0.0.1:5001/" class="feature-card">
+                <i class="bi bi-file-text"></i>
+                <h5>Resume Check</h5>
+                <p>Optimize your resume for job descriptions.</p>
+            </a>
+            <a href="https://www.cloudskillsboost.google/interview_warmup/category/general" class="feature-card">
+                <i class=" bi-person-video2"></i>
+                <h5>Interview Practice</h5>
+                <p>Practice with Google’s Interview Warmup tool.</p>
+            </a>
+        </div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
