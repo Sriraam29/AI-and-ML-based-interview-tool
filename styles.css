@@ -1,0 +1,207 @@
+/* Add to your existing CSS */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.upload-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.upload-icon {
+    font-size: 3.5rem;
+    color: #6366f1;
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.upload-area {
+    border: 2px dashed #6366f1;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    background-color: rgba(99, 102, 241, 0.02);
+}
+
+.upload-area:hover {
+    border-color: #4f46e5;
+    background-color: rgba(99, 102, 241, 0.05);
+    transform: scale(1.01);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+    border: none !important;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.supported-formats {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 1.2rem;
+    padding: 0.5rem;
+    background-color: rgba(99, 102, 241, 0.05);
+    border-radius: 6px;
+}
+
+.transcript-box {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 1.2rem;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.corrected-transcript {
+    background-color: #f0f7ff;
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.sentiment-charts {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.chart-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    flex: 1;
+    min-width: 0;
+}
+
+.chart-title {
+    text-align: center;
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.chart-title i {
+    color: #6366f1;
+}
+
+.card-header {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+    padding: 1rem 1.5rem;
+}
+
+.analysis-section h6 {
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 600;
+}
+
+.analysis-section h6 i {
+    color: #6366f1;
+}
+
+/* Interview Tools Section */
+.interview-tools {
+    border-top: 1px solid rgba(99, 102, 241, 0.1);
+    padding-top: 1.5rem;
+}
+
+.interview-tools .btn {
+    padding: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.interview-tools .btn i {
+    font-size: 1.2rem;
+}
+
+.interview-tools .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary {
+    color: #6366f1;
+    border-color: #6366f1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6366f1;
+    border-color: #6366f1;
+}
+
+.btn-outline-success {
+    color: #10b981;
+    border-color: #10b981;
+}
+
+.btn-outline-success:hover {
+    background-color: #10b981;
+    border-color: #10b981;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
