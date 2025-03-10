@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Audio Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0e7ff, #f5f7fa);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background: #2d3748;
+        }
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card-body {
+            padding: 25px;
+        }
+        h5 {
+            color: #2d3748;
+            font-size: 1.25rem;
+        }
+        .btn {
+            margin: 5px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        #voiceChart {
+            max-height: 300px; /* Smaller chart */
+            margin: 0 auto;
+        }
+        .text-muted {
+            color: #718096 !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5><i class="bi bi-mic"></i> Speak Now</h5>
+                        <button class="btn btn-primary mt-3" id="startBtn"><i class="bi bi-play-fill"></i> Start</button>
+                        <button class="btn btn-danger mt-3" id="stopBtn" disabled><i class="bi bi-stop-fill"></i> Stop</button>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header text-white bg-dark">
+                        <h5><i class="bi bi-pie-chart"></i> Voice Tone</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="voiceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-white bg-dark">
+                        <h5><i class="bi bi-graph-up"></i> Results</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6><i class="bi bi-chat-dots"></i> Transcript</h6>
+                        <p id="transcriptText" class="text-muted">Transcript will appear here...</p>
+                        <h6><i class="bi bi-pencil"></i> Corrected Transcript</h6>
+                        <p id="correctedTranscript" class="text-muted">Corrected transcript will appear here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="live-audio.js"></script>
+</body>
+</html>
